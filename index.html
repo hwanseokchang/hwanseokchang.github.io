@@ -211,6 +211,8 @@
   }
   .award-card:hover { border-color: var(--accent-mid); box-shadow: 0 4px 20px rgba(42,92,143,0.08); }
   .award-img-wrap { cursor: pointer; position: relative; }
+  button.award-img-wrap { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-align: inherit; }
+  button.award-img-wrap .award-img-caption { display: block; }
   .award-img-wrap img { width: 100%; border-radius: 6px; border: 1px solid var(--border); display: block; transition: transform 0.2s; }
   .award-img-wrap:hover img { transform: scale(1.02); }
   .award-img-caption { font-family: var(--mono); font-size: 0.63rem; color: var(--text-muted); text-align: center; margin-top: 0.35rem; }
@@ -775,12 +777,16 @@
       </div>
 
       <div class="award-card">
-        <div class="award-placeholder">&#x1F393;</div>
+        <button type="button" class="award-img-wrap" onclick="openLightbox('doctoral-scholarship-2026.jpg')" aria-label="박사우수장학금(이공계) 장학증서 확대 보기">
+          <img src="doctoral-scholarship-2026.jpg" alt="박사우수장학금(이공계) 장학증서">
+          <span class="award-img-caption">Click to enlarge</span>
+        </button>
         <div>
           <span class="award-badge">&#x1F393; Scholarship</span>
-          <p class="award-year">선정일자 및 공문번호 추후 업데이트</p>
+          <p class="award-year">August 31, 2026 / No. 2026-0774</p>
           <p class="award-title">박사우수장학금 (이공계)</p>
           <p class="award-org">한국장학재단</p>
+          <p class="award-desc">장학증서 발급: 부총리 겸 과학기술정보통신부 장관</p>
         </div>
       </div>
 
