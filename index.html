@@ -766,13 +766,16 @@
     <div class="awards-list">
 
       <div class="award-card">
-        <div class="award-placeholder">&#x1F30F;</div>
+        <button type="button" class="award-img-wrap" onclick="openLightbox('uiuc-visiting-scholar-invitation-2026.png', 'University of Illinois Urbana-Champaign 방문학자 초청장')" aria-label="University of Illinois Urbana-Champaign 방문학자 초청장 확대 보기">
+          <img src="uiuc-visiting-scholar-invitation-2026.png" alt="University of Illinois Urbana-Champaign 방문학자 초청장" loading="lazy">
+          <span class="award-img-caption">Click to enlarge</span>
+        </button>
         <div>
           <span class="award-badge">&#x1F393; Scholarship</span>
           <p class="award-year">2026</p>
           <p class="award-title">BK21 우수 대학원생 국제 공동연수 지원 사업 선발</p>
           <p class="award-org">한국연구재단</p>
-          <p class="award-desc">연수기관: University of Illinois Urbana-Champaign (미국)<br>연수 연구실: <a href="https://matse.illinois.edu/people/profile/pbraun" target="_blank" rel="noopener noreferrer">Paul V. Braun</a> 교수 연구실<br>예정 기간: 2027년 1월&ndash;5월 (잠정)</p>
+          <p class="award-desc">연수기관: University of Illinois Urbana-Champaign (미국)<br>연수 연구실: <a href="https://matse.illinois.edu/people/profile/pbraun" target="_blank" rel="noopener noreferrer">Paul V. Braun</a> 교수 연구실<br>예정 기간: 2026년 11월&ndash;2027년 2월</p>
         </div>
       </div>
 
@@ -878,7 +881,7 @@
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <p class="timeline-period">2027.01 &mdash; 2027.05 (Tentative)</p>
+        <p class="timeline-period">2026.11 &mdash; 2027.02 (Tentative)</p>
         <p class="timeline-role">Planned Research Visit</p>
         <p class="timeline-org">University of Illinois Urbana-Champaign, USA</p>
         <p class="timeline-detail">Host: <a href="https://matse.illinois.edu/people/profile/pbraun" target="_blank" rel="noopener noreferrer">Prof. Paul V. Braun</a>, Department of Materials Science and Engineering.</p>
@@ -969,8 +972,9 @@
     });
   }
 
-  function openLightbox(src) {
+  function openLightbox(src, alt = 'Award Certificate') {
     document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-img').alt = alt;
     document.getElementById('lightbox').classList.add('open');
     document.body.style.overflow = 'hidden';
   }
