@@ -171,6 +171,10 @@
     display: grid; grid-template-columns: 52px 1fr; gap: 1.25rem; align-items: start;
   }
   .pub-item:last-child { border-bottom: none; }
+  .pub-image-button { display: block; width: 200px; flex-shrink: 0; padding: 0; border: 0; border-radius: 4px; background: none; color: inherit; font: inherit; text-align: center; cursor: zoom-in; }
+  .pub-image-button img { display: block; width: 100%; border-radius: 4px; border: 2px solid #ddd; }
+  .pub-image-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .pub-image-caption { display: block; margin-top: 0.35rem; font-family: var(--mono); font-size: 0.63rem; line-height: 1.5; color: var(--text-muted); }
   .pub-num { font-family: var(--mono); font-size: 0.8rem; color: var(--text-muted); padding-top: 3px; text-align: right; }
   .pub-badge {
     display: inline-block; font-family: var(--mono); font-size: 0.67rem;
@@ -424,6 +428,9 @@
     border-radius: 8px !important;
   }
 
+  .pub-image-button { width: 100%; max-width: 260px; margin-bottom: 0.9rem; }
+  .pub-image-button img { margin-bottom: 0; }
+
   .pub-title {
     font-size: 0.93rem;
   }
@@ -489,6 +496,8 @@
   .pub-item img {
     max-width: 100%;
   }
+
+  .pub-image-button { max-width: 100%; }
 
   .contact-value {
     font-size: 0.8rem;
@@ -676,7 +685,10 @@
       <div class="pub-item" data-category="published">
         <p class="pub-num">[4]</p>
         <div style="display:flex;gap:1rem;align-items:flex-start;">
-          <img src="paper4.jpg" alt="paper cover" style="width:200px;border-radius:4px;border:2px solid #ddd;flex-shrink:0;">
+          <button type="button" class="pub-image-button" onclick="openLightbox('paper4.jpg', 'Paper image: Spectrally Encoded Proximity-Field Nanopatterning')" aria-label="Enlarge image for Spectrally Encoded Proximity-Field Nanopatterning">
+            <img src="paper4.jpg" alt="Paper image: Spectrally Encoded Proximity-Field Nanopatterning">
+            <span class="pub-image-caption">Click to enlarge</span>
+          </button>
           <div>
             <span class="pub-badge published">Published</span>
             <p class="pub-title">Spectrally Encoded Proximity-Field Nanopatterning</p>
@@ -690,7 +702,10 @@
       <div class="pub-item" data-category="published">
         <p class="pub-num">[3]</p>
         <div style="display:flex;gap:1rem;align-items:flex-start;">
-          <img src="paper3.jpg" alt="paper cover" style="width:200px;border-radius:4px;border:2px solid #ddd;flex-shrink:0;">
+          <button type="button" class="pub-image-button" onclick="openLightbox('paper3.jpg', 'Paper image: Incoherent dielectric tensor tomography for quantitative three-dimensional measurement of biaxial anisotropy')" aria-label="Enlarge image for Incoherent dielectric tensor tomography for quantitative three-dimensional measurement of biaxial anisotropy">
+            <img src="paper3.jpg" alt="Paper image: Incoherent dielectric tensor tomography for quantitative three-dimensional measurement of biaxial anisotropy">
+            <span class="pub-image-caption">Click to enlarge</span>
+          </button>
           <div>
             <span class="pub-badge published">Published</span>
             <p class="pub-title">Incoherent dielectric tensor tomography for quantitative three-dimensional measurement of biaxial anisotropy</p>
@@ -704,7 +719,10 @@
       <div class="pub-item" data-category="published">
         <p class="pub-num">[2]</p>
         <div style="display:flex;gap:1rem;align-items:flex-start;">
-          <img src="paper2.jpg" alt="paper cover" style="width:200px;border-radius:4px;border:2px solid #ddd;flex-shrink:0;">
+          <button type="button" class="pub-image-button" onclick="openLightbox('paper2.jpg', 'Paper image: Graphene-based thermoelectric materials: toward sustainable energy-harvesting systems')" aria-label="Enlarge image for Graphene-based thermoelectric materials: toward sustainable energy-harvesting systems">
+            <img src="paper2.jpg" alt="Paper image: Graphene-based thermoelectric materials: toward sustainable energy-harvesting systems">
+            <span class="pub-image-caption">Click to enlarge</span>
+          </button>
           <div>
             <span class="pub-badge published">Published</span>
             <p class="pub-title">Graphene-based thermoelectric materials: toward sustainable energy-harvesting systems</p>
@@ -718,7 +736,10 @@
       <div class="pub-item" data-category="published">
         <p class="pub-num">[1]</p>
         <div style="display:flex;gap:1rem;align-items:flex-start;">
-          <img src="paper1.jpg" alt="paper cover" style="width:200px;border-radius:4px;border:2px solid #ddd;flex-shrink:0;">
+          <button type="button" class="pub-image-button" onclick="openLightbox('paper1.jpg', 'Paper image: Rational design of arbitrary topology in three-dimensional space via inverse calculation of phase modulation')" aria-label="Enlarge image for Rational design of arbitrary topology in three-dimensional space via inverse calculation of phase modulation">
+            <img src="paper1.jpg" alt="Paper image: Rational design of arbitrary topology in three-dimensional space via inverse calculation of phase modulation">
+            <span class="pub-image-caption">Click to enlarge</span>
+          </button>
           <div>
             <span class="pub-badge published">Published</span>
             <p class="pub-title">Rational design of arbitrary topology in three-dimensional space via inverse calculation of phase modulation</p>
