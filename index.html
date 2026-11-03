@@ -12,10 +12,6 @@
 <meta property="og:description" content="Hwanseok Chang (장환석) is a Ph.D. candidate in Materials Science and Engineering at Korea University, researching inverse design of nanophotonics.">
 <meta property="og:url" content="https://hwanseokchang.github.io/">
 <meta property="og:site_name" content="Hwanseok Chang">
-<meta property="og:image" content="https://hwanseokchang.github.io/hwanseok.jpg">
-<meta property="og:image:alt" content="Hwanseok Chang (장환석)">
-<meta property="og:image:width" content="762">
-<meta property="og:image:height" content="918">
 <meta property="profile:first_name" content="Hwanseok">
 <meta property="profile:last_name" content="Chang">
 <meta property="profile:username" content="hwanseokchang">
@@ -34,7 +30,6 @@
     "name": "Hwanseok Chang",
     "alternateName": ["장환석", "hwanseokchang"],
     "url": "https://hwanseokchang.github.io/",
-    "image": "https://hwanseokchang.github.io/hwanseok.jpg",
     "jobTitle": "Ph.D. Candidate",
     "affiliation": {
       "@type": "CollegeOrUniversity",
@@ -93,7 +88,7 @@
   /* Hero */
   #hero {
     padding-top: 130px; padding-bottom: 80px;
-    display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: start;
+    display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: start;
   }
   .hero-tag {
     font-family: var(--mono); font-size: 0.73rem; color: var(--accent-mid);
@@ -114,15 +109,6 @@
   .btn-primary:hover { background: #1e4a78; }
   .btn-secondary { background: transparent; color: var(--text-secondary); border: 1px solid var(--border-strong); }
   .btn-secondary:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
-
-  .hero-photo {
-    width: 200px; height: 200px; border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid var(--surface);
-    box-shadow: 0 0 0 1px var(--border), 0 8px 32px rgba(42,92,143,0.10);
-    flex-shrink: 0;
-  }
-  .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 
   .profile-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.1rem; }
   .profile-badge {
@@ -346,13 +332,6 @@
     text-align: center;
   }
 
-  .hero-photo {
-    order: -1;
-    width: 132px;
-    height: 132px;
-    margin: 0 auto;
-  }
-
   .hero-tag {
     justify-content: center;
   }
@@ -554,9 +533,6 @@
           ORCID: 0009-0003-8513-5261
         </a>
       </div>
-    </div>
-    <div class="hero-photo">
-      <img src="hwanseok.jpg" alt="Hwanseok Chang">
     </div>
   </section>
 
